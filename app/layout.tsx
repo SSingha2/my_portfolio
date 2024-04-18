@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("http://localhost:3000/"),
+	metadataBase: new URL("https://my-portfolio-rho-eight-93.vercel.app/"),
 
 	title: "Soumadeep Singha Portfolio",
 	authors: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		title: "Soumadeep Singha",
 		description:
 			"Hello, I am from West Bengal,India. I am a recent graduate looking for software developer roles, and I also have knowledge of the Japanese language.",
-		url: "",
+		url: "https://my-portfolio-rho-eight-93.vercel.app/",
 		siteName: "Soumadeep Singha",
 		images: "/OG.png",
 		type: "website",
