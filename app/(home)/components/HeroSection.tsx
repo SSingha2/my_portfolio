@@ -14,7 +14,7 @@ export default function HeroSection() {
                 {"Hello, I am from West Bengal,India. I am a recent graduate looking for software developer roles, and I also have knowledge of the Japanese language."}
             </p>
             <div className='flex flex-row gap-5'>
-                <Link href={'https://drive.google.com/file/d/1X9yT-MzPT-UW87g6ZaBihe3jh_79GDfh/view?usp=drive_link'>
+                <Link href={'https://drive.google.com/file/d/1X9yT-MzPT-UW87g6ZaBihe3jh_79GDfh/view?usp=drive_link'} target="_blank" className='inline-block group'>
                     <Title text = "My Resume 🗒️"/>
                 </Link>
                 <Link href={'mailto:soumadeep1@gmail.com'} className='inline-block group'>
