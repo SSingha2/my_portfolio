@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiExpress, SiMongodb, SiNodedotjs, SiReact,SiJavascript,SiApachegroovy,SiAmazonaws } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiNodedotjs, SiReact,SiJavascript,SiApachegroovy,SiAmazonaws, SiAngular, SiDocker, SiMysql, SiSpringboot } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -7,6 +7,13 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 export default function Projects() {
     const projectItems = [
+        {
+            title: "Convention Hall Booking System",
+            tech: [SiSpringboot, SiAngular, SiMysql, SiDocker],
+            link: "https://github.com/SSingha2/Hall_Booking_Java",
+            cover: "/Proj6.png",
+            background: "bg-indigo-500"
+        },
         {
             title: "Sign In/Sign Up page using MERN stack",
             tech:[SiMongodb,SiExpress,SiReact,SiNodedotjs],
