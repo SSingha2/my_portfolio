@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Languages from './components/Languages';
 import Certifications from './components/Certifications';
 
+
 export default function page() {
   return (
     <div className="min-h-screen bg-black overflow-hidden ">

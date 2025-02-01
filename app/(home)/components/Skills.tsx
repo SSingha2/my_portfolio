@@ -15,8 +15,11 @@ import {
   SiDocker 
 } from "react-icons/si";
 import { FaJava, FaLinux } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t } = useTranslation();
+
   const frontendSkills = [
     { text: "Angular", icon: SiAngular },
     { text: "JavaScript", icon: SiJavascript },
@@ -40,23 +43,23 @@ export default function Skills() {
 
   return (
     <div className="max-w-5xl mx-auto px-8 space-y-16">
-      <Title text="Skills" className="flex flex-col items-center justify-center -rotate-6" />
+      <Title text={t("skills.name")} className="flex flex-col items-center justify-center -rotate-6" />
 
       {/* Frontend Section */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Frontend</h2>
+        <h2 className="text-2xl font-bold mb-6">{t("skills.frontend")}</h2>
         <HoverEffect items={frontendSkills} />
       </div>
 
       {/* Backend Section */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Backend</h2>
+        <h2 className="text-2xl font-bold mb-6">{t("skills.backend")}</h2>
         <HoverEffect items={backendSkills} />
       </div>
 
       {/* Technologies Section */}
       <div>
-        <h2 className="text-2xl font-bold mb-6">Technologies</h2>
+        <h2 className="text-2xl font-bold mb-6">{t("skills.technology")}</h2>
         <HoverEffect items={technologySkills} />
       </div>
     </div>

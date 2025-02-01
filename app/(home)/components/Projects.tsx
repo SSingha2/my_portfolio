@@ -1,35 +1,39 @@
+"use client";
 import React from 'react'
 import { SiExpress, SiMongodb, SiNodedotjs, SiReact,SiJavascript,SiApachegroovy,SiAmazonaws, SiAngular, SiDocker, SiMysql, SiSpringboot } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
+import { useTranslation } from 'react-i18next';
 
 export default function Projects() {
+    const { t } = useTranslation();
+
     const projectItems = [
         {
-            title: "Convention Hall Booking System",
+            title: t("project.title1"),
             tech: [SiSpringboot, SiAngular, SiMysql, SiDocker],
             link: "https://github.com/SSingha2/Hall_Booking_Java",
             cover: "/Proj6.png",
             background: "bg-indigo-500"
         },
         {
-            title: "Sign In/Sign Up page using MERN stack",
+            title: t("project.title2"),
             tech:[SiMongodb,SiExpress,SiReact,SiNodedotjs],
             link:"https://login-register-app-frontend-eekmq624p-ssingha2s-projects.vercel.app/",
             cover:"/Proj1.png",
             background: "bg-indigo-500"
         },
         {
-            title: "CI/CD pipeline with a Demo flask app",
+            title: t("project.title3"),
             tech:[SiApachegroovy,SiAmazonaws ],
             link:"https://github.com/SSingha2/Flask_CICD",
             cover:"/Proj2.png",
             background: "bg-green-500"
         },
         {
-            title: "This current portfolio website",
+            title: t("project.title4"),
             tech:[SiJavascript],
             link:"https://github.com/SSingha2/Flask_CICD",
             cover:"/Proj3.png",
@@ -39,7 +43,7 @@ export default function Projects() {
 
   return (
     <div className='py-10 p-5 sm:p-0'>
-      <Title text="Projects" className='flex flex-col items-center justify-center -rotate-6'/>
+      <Title text={t("project.name")} className='flex flex-col items-center justify-center -rotate-6'/>
       <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
             {projectItems.map((p,index)=>{
                 return <Link href={p.link} key={index} target="_blank">
